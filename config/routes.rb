@@ -4,12 +4,12 @@ CkTest::Application.routes.draw do
   resources :things
   
   resources :products
-
-  root :to => 'products#index'
   
   constraints(Subdomain) do  
-    match '/' => 'things#index'    
+    root :to => 'things#index'    
   end
+
+  root :to => 'products#index'
   
 
   # The priority is based upon order of creation:
