@@ -1,8 +1,8 @@
 # Sample localization file for English. Add more files in this directory for other locales.
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
-en:
-  products: "Products"
-  new_product: "New Product"
-  things: "Things"
-  new_thing: "New Thing"
+de:
+  products: "Produkte"
+  new_product: "Neues Produkt"
+  things: "Dinge"
+  new_thing: "Neues Ding"

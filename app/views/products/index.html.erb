@@ -1,0 +1,14 @@
+<% title t(:products) %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for product in @products %>
+    <tr>
+      <td><%= product.name %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to t(:new_product), new_product_path %></p>

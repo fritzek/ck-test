@@ -1,4 +1,17 @@
 CkTest::Application.routes.draw do
+  filter :locale
+  
+  resources :things
+  
+  resources :products
+
+  root :to => 'products#index'
+  
+  constraints(Subdomain) do  
+    match '/' => 'things#index'    
+  end
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

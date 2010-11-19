@@ -1,0 +1,13 @@
+<% title "New Thing" %>
+
+<%= form_for @thing do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>
+
+
+<p><%= link_to "Back to List", things_path %></p>
